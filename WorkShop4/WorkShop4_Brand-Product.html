@@ -1,0 +1,44 @@
+<!DOCTYPE html> 
+<html> 
+<head> 
+<style>
+body { 
+    height: 842px; 
+    width: 595px; 
+    /* to centre page on screen*/ 
+    margin-left: auto; 
+    margin-right: auto;} 
+
+
+    .contenedor{
+            position: relative;
+            display: inline-block;
+            text-align: center;
+        }
+        .texto-encima{
+            position: absolute;
+            top: 10px;
+            left: 10px;
+        }
+        .centrado{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+</style> 
+<head> 
+<body> 
+
+    <p>Stop coding non-responsive sites.</p>
+    <p>Let users view sites from anywhere.</p>
+
+         <div class="contenedor">
+            <img src="https://www.paginaswebs.com/wp-content/uploads/2016/08/fondo_web.jpg"  />
+            <div class="texto-encima">Texto</div>
+            <div class="centrado">Centrado</div>
+          </div>
+
+          
+</body> 
+</html>

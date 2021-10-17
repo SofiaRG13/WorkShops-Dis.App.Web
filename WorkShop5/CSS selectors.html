@@ -1,0 +1,139 @@
+<!DOCTYPE html> 
+<html> 
+<head> 
+<style>
+body { 
+    height: 842px; 
+    width: 595px; 
+    /*Centrar la pagina*/ 
+    margin-left: auto; 
+    margin-right: auto;} 
+
+    /*Estilo a un ID*/
+    #identified {
+    background-color: skyblue;
+    }
+
+    /*Estilo a class center*/
+    .center {
+    text-align: center;
+    color: red;
+    }
+
+    /*Estilo a todos los Elements p*/
+    p {
+    background-color: yellow;
+    }
+
+    /*Estilo a todos los atributos class*/
+    [class] {
+    Color:green;
+    }
+
+    /*Combined Selector*/
+    div p {
+    background-color: rgb(201, 161, 228);
+    color: blanchedalmond;
+    }
+
+    /*Grouping Selector*/
+    a, pre {
+	color: rgb(241, 6, 6);
+
+    }
+
+    /*Child Selector*/
+    span { background-color: white; }
+    div > span {
+    background-color: DodgerBlue;
+    }
+
+    /*PseudoClases*/
+    p:first-child { color: red; } 
+    p:last-child { color: blue; } 
+    p:only-child { color: green; }
+
+    /*PseudoElements*/
+    p::first-line { color: green; }
+    h2::first-letter { color: blue; }
+    p::after { content: " - Aloja more don";  color: red; }
+    p::before { content: "*. "; }
+    
+
+    /*Custom variables/properties*/
+
+    :root {
+         /*Custom variables*/
+        --main-bg-color: rgb(165, 42, 124);
+        --main-font-color: white;
+    }
+
+    .uno {
+    color: var(--main-font-color);
+    background-color: var(--main-bg-color);
+   
+    display: inline-block;
+    }
+
+    .dos {
+    color: var(--main-font-color);
+    background-color: black;
+    
+    display: inline-block;
+    }
+    .tres {
+        
+    background-color: var(--main-bg-color);
+   
+    }
+    .cuatro {
+    color: var(--main-font-color);
+    background-color: var(--main-bg-color);
+    }
+
+    .cinco {
+    background-color: var(--main-bg-color);
+    color: rgb(226, 198, 156);
+    }
+
+</style> 
+<head> 
+
+
+<body> 
+    <div id="identified">Este div tiene un ID especial</div>
+    <div>Este solo es un div regular.</div>
+
+    <p class="center large">Este es un texto con Class Selector</p>
+          
+    <h1 class="atributo class">Este es un texto con Atributo Class</h1>
+
+    <a href="#">Sitio Web</a>
+    <pre>Texto</pre>
+
+    <div> <p>Este es un div "p" para combinar</p> </div>
+
+    <div>
+        <span>Span #1, dentro del div.
+          <span>Span #2, dentro del span que esta en el div.</span>
+        </span>
+    </div>
+      <span>Span #3, no esta dentro del div.</span>
+     
+
+    <div>
+        <p>Primer parrafo</p>
+        <p>Segundo parrafo</p>
+        <p>Tercer parrafo</p>
+        <p>Cuarto parrafo</p>
+    </div>
+
+    <div>
+        <div class="uno">1:</div>
+        <div class="dos">2: Texto <span class="cinco">5 - mas texto</span></div>
+        <input class="tres">
+        <textarea class="cuatro">4: Lorem Ipsum</textarea>
+    </div>
+
+</body> 
+</html>
