@@ -1,104 +1,12 @@
 <!DOCTYPE html> 
 <html> 
 <head> 
-<style>
-body { 
-    height: 842px; 
-    width: 595px; 
-    /*Centrar la pagina*/ 
-    margin-left: auto; 
-    margin-right: auto;} 
-
-    /*Estilo a un ID*/
-    #identified {
-    background-color: skyblue;
-    }
-
-    /*Estilo a class center*/
-    .center {
-    text-align: center;
-    color: red;
-    }
-
-    /*Estilo a todos los Elements p*/
-    p {
-    background-color: yellow;
-    }
-
-    /*Estilo a todos los atributos class*/
-    [class] {
-    Color:green;
-    }
-
-    /*Combined Selector*/
-    div p {
-    background-color: rgb(201, 161, 228);
-    color: blanchedalmond;
-    }
-
-    /*Grouping Selector*/
-    a, pre {
-	color: rgb(241, 6, 6);
-
-    }
-
-    /*Child Selector*/
-    span { background-color: white; }
-    div > span {
-    background-color: DodgerBlue;
-    }
-
-    /*PseudoClases*/
-    p:first-child { color: red; } 
-    p:last-child { color: blue; } 
-    p:only-child { color: green; }
-
-    /*PseudoElements*/
-    p::first-line { color: green; }
-    h2::first-letter { color: blue; }
-    p::after { content: " - Aloja more don";  color: red; }
-    p::before { content: "*. "; }
-    
-
-    /*Custom variables/properties*/
-
-    :root {
-         /*Custom variables*/
-        --main-bg-color: rgb(165, 42, 124);
-        --main-font-color: white;
-    }
-
-    .uno {
-    color: var(--main-font-color);
-    background-color: var(--main-bg-color);
-   
-    display: inline-block;
-    }
-
-    .dos {
-    color: var(--main-font-color);
-    background-color: black;
-    
-    display: inline-block;
-    }
-    .tres {
-        
-    background-color: var(--main-bg-color);
-   
-    }
-    .cuatro {
-    color: var(--main-font-color);
-    background-color: var(--main-bg-color);
-    }
-
-    .cinco {
-    background-color: var(--main-bg-color);
-    color: rgb(226, 198, 156);
-    }
-
-</style> 
+    <title>WorkShop5-CSS Selectors</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilo.css">
 <head> 
-
 
 <body> 
     <div id="identified">Este div tiene un ID especial</div>

@@ -1,44 +1,111 @@
-<!DOCTYPE html> 
-<html> 
-<head> 
-<style>
-body { 
-    height: 842px; 
-    width: 595px; 
-    /* to centre page on screen*/ 
-    margin-left: auto; 
-    margin-right: auto;} 
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>WorkShop4-Brand/Product</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilo.css">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+</head>
 
 
-    .contenedor{
-            position: relative;
-            display: inline-block;
-            text-align: center;
-        }
-        .texto-encima{
-            position: absolute;
-            top: 10px;
-            left: 10px;
-        }
-        .centrado{
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-        }
-</style> 
-<head> 
-<body> 
+<body>
+   <main class="main">
+    <div class="container">
 
-    <p>Stop coding non-responsive sites.</p>
-    <p>Let users view sites from anywhere.</p>
+        <section>
+            <div class="section1">
 
-         <div class="contenedor">
-            <img src="https://www.paginaswebs.com/wp-content/uploads/2016/08/fondo_web.jpg"  />
-            <div class="texto-encima">Texto</div>
-            <div class="centrado">Centrado</div>
-          </div>
+                <article>
 
-          
-</body> 
+                    <h2 id="titulo">Stop coding non-responsive sites. <br> Let users view sites from anywhere.</h2>
+                    
+                    <input id="btn1" class="boton" type="button" value="TRY SKELETON">
+
+                    <img class="iphone-uno" src="Images/iphone.png">
+                    <img class="iphone-dos" src="Images/iphone.png">
+
+                </article>
+            </div>
+        </section>  
+        
+        <section>
+            <div class="section2">
+
+               <article>
+                <h2 class="porcentaje">67%</h2>
+                
+                    <h3>Purchase Increase </h3>
+                    <p>
+                        Percentaje of users more likely to <br> Purchase on mobile friendly site.
+                    </p>
+               </article>
+
+               <article>
+                <h2 class="porcentaje">90%</h2>
+
+                    <h3>Multi-device Users </h3>
+                    <p>
+                        Most of the world accesses the internet on <br> multiple devices.
+                    </p>
+               </article>
+
+               <article>
+                <h2 class="porcentaje">66%</h2>
+
+                    <h3> Sad Users </h3>
+                    <p>
+                        Percentaje of users that are frustrated <br> with page load times.
+                    </p>
+               </article>
+
+            </div>
+        </section>
+
+        <section>
+            <div class="section3">
+
+                <article>
+
+                <h2>Need help getting started?</h2>
+                
+                <p>
+                    Skeleton is amazing easy place to start with resposive devlopment. If you 
+                    <br> want to learn more,
+                    just visit the documentation!
+                </p>
+
+                </article>
+
+                <input id="btn2" class="boton" type="button" value="VIEW SKELETON DOCS">
+
+            </div>
+        </section>
+
+        <section>   
+            <div class="section4">
+
+                <article>
+
+                    <h2>Responsive Images</h2>
+
+                    <p>
+                        Skeleton images sit easily in grid with .u-max-full-width class. I suggest exploring
+                        <br> solution to serving different images based on device size.
+                    </p>
+
+                    <img class="placeholder-uno" src="Images/placeholder.png" alt="" >
+                    <img class="placeholder-dos" src="Images/placeholder.png" alt="">
+
+                </article>
+
+            </div>
+        </section>
+        
+    </div>
+   </main> 
+   
+</body>
 </html>
