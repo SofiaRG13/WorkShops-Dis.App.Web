@@ -1,0 +1,208 @@
+body
+{
+    background: rgb(236, 236, 236);
+    color: #606060;
+    font-size: 12px;  
+    margin: 0px;
+    padding-left: 40px;
+    padding-right: 40px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    
+}
+
+.container
+{
+    margin-left: 350px;
+    margin-right: 350px;
+    
+}
+
+a{
+    text-decoration: none;
+    color:#606060;
+}
+
+.section1{
+    background: white;
+    border-style:solid;
+    border-color: rgb(226, 226, 226);
+    border-width: 1.9px;
+}
+
+.mountain1{
+
+    width: 60px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    margin-right: 460px;
+    
+}
+
+ul.menu{
+    list-style: none;
+    display: flex;
+}
+
+.top-nav{
+    
+    background: white;
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 20px;
+    margin-right: 30px;
+    color:#606060;
+    
+}
+
+li{
+    margin: 0px 10px;
+    font-size: 20px;
+}
+
+#btn1{
+    background-color: #606060;
+    color: white;
+    border-style: none;
+    padding: 5px;
+    width: 110px;
+    font-size: 18px;
+}
+
+.section2{
+    background: white;
+    border-style:solid;
+    border-color: rgb(226, 226, 226);
+    border-width: 1.9px;
+    display: flex;
+}
+
+.image{
+    border-style:solid;
+    border-color: rgb(226, 226, 226);
+    border-width: 2px;
+    border-left: none;
+    border-bottom: none;
+    border-top: none;
+    margin-top: -1px;
+    margin-bottom: -4px;
+    width: 530px;
+    height: 538px;
+}
+
+.dashboard_products{
+    display: inline-flex;
+}
+
+.Prod_Detail{
+    margin-left: 38px;
+    margin-top: -13px;
+}
+
+h1{
+    font-weight: normal;
+    font-size: 50px;
+}
+
+#ofrecido{
+    font-style: normal;
+    font-size: 18px;
+    color: rgb(156, 155, 155);
+    margin-top: -45px;
+}
+
+.section2 a{
+    font-size: 18px;
+    color:blue;
+    text-decoration: underline;
+}
+
+.section2 p{
+    font-size: 16px;
+    color: rgb(156, 155, 155);
+}
+
+#line,#line2{
+    font-size: 30px;
+    font-weight: bold;
+    color: rgb(206, 203, 203);
+}
+
+#line{
+    margin-top: -10px;
+}
+
+.section2 h2{
+    font-weight: bold;
+    font-size: 15px;
+}
+
+#des{
+    margin-top: -30px;
+}
+
+#busco{
+    margin-top: 35px;
+}
+
+
+#btnAgre{
+    background-color: #606060;
+    color: white;
+}
+
+#btnAgre{
+    border-style: none;
+    padding: 12px;
+    width: 160px;
+    font-size: 16px;
+    margin-top: -5px;
+    margin-bottom: 5px;
+
+}
+
+
+
+.section3{
+    background: white;
+    border-style:solid;
+    border-color: rgb(226, 226, 226);
+    border-width: 1.9px;
+}
+
+ul.menu_bot{
+    list-style: none;
+    display: flex;
+}
+
+.bot-nav{
+    background: white;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    margin-right: 30px;
+    color:#606060;
+    
+}
+
+.section3 li{
+    margin: 0px 10px;
+    font-size: 16px;
+    padding: 10px;
+    margin-top: -15px;
+}
+
+.section3 img{
+    width: 25px;
+    padding-right: 5px;
+}
+
+.section3 p{
+    font-size: 16px;
+    font-weight: normal;
+    display:flex;
+    justify-content: center;
+    margin-top: 5px;
+    margin-bottom: 30px;
+}

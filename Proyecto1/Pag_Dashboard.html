@@ -2,14 +2,13 @@
 <html lang="en">
 
 <head>
-    <title>Editar/Crear Producto</title>
+    <title>Dashboard</title>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="estilo_Editar_Crear_Producto.css">
+    <link rel="stylesheet" href="estilo_Dashboard.css">
     <link href="https://fonts.google.com/specimen/Open+Sans" rel="stylesheet" type="text/css">
 </head>
-
 
 <body>
    <main class="main">
@@ -21,7 +20,7 @@
                 <article>
                     <nav class="top-nav">
      
-                        <img class="mountain1" src="Images/whiteMountain.png">
+                        <img class="mountain1" src="Images/mountain.png">
 
                         <ul class="menu">
                             
@@ -55,8 +54,8 @@
 
                 <article>
                     
-                    <h2 id="titulo1">Nuevo Producto</h2>
-                    <p>____________________________________</p>
+                    <h2 id="titulo1">Dashboard</h2>
+                    <pre>Bienvenido<b> Bladimir, </b>aqui podrá encontrar el estado actual de sus <br> Cambalaches y sus productos registrados.</pre>
 
                 </article>
             </div>
@@ -65,37 +64,65 @@
         <section>
             <div class="section3">
 
-                <p>Ingrese aqui la información del Producto que desea incluir en Cambalache.net</p> 
- 
-                <div class="textBoxes">
-                    <article>
-                        <input type="text" class="product" id="product" name="product" required minlength="1" maxlength="200" size="20" value="Nombre del Producto">
-                        <br>
-                        <textarea class="product" id="description" name="description" maxlength="300">Descripción</textarea>
-                        <br>
-                        <input type="text" class="product" id="image" name="image" required minlength="4" maxlength="100" size="56" value="http://google.com/imagen.png">
-                        <br>
-                        <textarea class="product" id="busco" name="busco" maxlength="300">Busco</textarea>
-                        <br>
-                    </article>
-                </div>
-                    
-                <h2>_________________________________________________</h2>
-
-                <div class="buttons">
+                <div class="NewButton">
                     <article >
 
-                        <input id="btn2" class="boton" type="button" value="Guardar" >
-                        <input id="btn3" class="boton" type="button" value="Cancelar" >
+                        <input id="btn2" class="boton" type="button" value="Nuevo" onclick="location.href= 'Pag_Editar_Crear_Producto.html'">
 
                     </article>
                 </div>
             </div>
         </section> 
 
-
         <section>
             <div class="section4">
+                
+                <div class="dashboard_products">
+                    <img id="img_dash1" class="img_dash" src="Images/dashboardImage.png">
+                    <article>
+                        <div class="buttonsEdit">
+                        <a class="name" id="name_1">NINTENDO SWITCH</a>
+                        <br>
+                        <input id="btnEd1" class="botonED" type="button" value="Editar" onclick="location.href= 'Pag_Editar_Crear_Producto.html'">
+                        <br>
+                        <input id="btnEl1" class="botonEL" type="button" value="Eliminar" >
+                        </div>
+                    </article>
+                </div>
+                <div class="dashboard_products">
+                    <img class="img_dash" src="Images/dashboardImage.png">
+                    <article>
+                        
+                        <div class="buttonsEdit">
+                        <a class="name" id="name_2">MONITOR AOC 14"</a>
+                        <br>
+                        <input id="btnEd2" class="botonED" type="button" value="Editar" onclick="location.href= 'Pag_Editar_Crear_Producto.html'">
+                        <br>
+                        <input id="btnEl2" class="botonEL" type="button" value="Eliminar" >
+                    </div>
+                    </article>
+                </div>
+                <div class="dashboard_products">
+                    <img class="img_dash" src="Images/dashboardImage.png">
+                    <article>
+                        
+                        <div class="buttonsEdit">
+                        <a class="name" id="name_3">OTRO...</a>
+                        <br>
+                        <input id="btnEd3" class="botonED" type="button" value="Editar" onclick="location.href= 'Pag_Editar_Crear_Producto.html'">
+                        <br>
+                        <input id="btnEl3" class="botonEL" type="button" value="Eliminar" >
+                    </div>
+                    </article>
+                </div>
+                </div>
+
+                    
+            
+        </section> 
+
+        <section>
+            <div class="section5">
                 <article>
                     <nav class="bot-nav">
 
@@ -114,7 +141,7 @@
                                 <a> | </a>
                             </li>
                             <li>
-                                <a href="Pag_Login.html"> Ingresar </a>
+                                <a href="Pag_Dashboard.html"> Dashboard </a>
                             </li>
                         </ul>
                     </nav>
