@@ -11,18 +11,8 @@ function addBook() {
   booksDb.push(bookName);
   localStorage.setItem('books', JSON.stringify(booksDb));
   //reload the book list
-  showListOfBooks();
   llenarTabla();
 }
-
-function showListOfBooks(){
-  const bookName = localStorage.getItem('books');
-
- 
-  // read books from localstorage
-  // generate the HTML table to show the book
-}
-
 
 function validateTitle() {
   //read the book title field
@@ -64,4 +54,3 @@ function llenarTabla() {
   }
 }
 
-showListOfBooks();

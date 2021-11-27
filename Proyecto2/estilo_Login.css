@@ -8,24 +8,35 @@ body
     padding-right: 40px;
     margin-top: 30px;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    
 }
 
 .container
 {
     margin-left: 280px;
     margin-right: 280px;
-}
-
-.section1{
-    background: rgb(247, 247, 247);
-    border-style:solid;
-    border-color: rgb(226, 226, 226);
-    border-width: 1.9px;
+    
 }
 
 a{
     text-decoration: none;
     color:#606060;
+}
+
+.section1{
+    background: white;
+    border-style:solid;
+    border-color: rgb(226, 226, 226);
+    border-width: 1.9px;
+}
+
+.mountain1{
+
+    width: 60px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    margin-right: 630px;
+    
 }
 
 ul.menu{
@@ -35,7 +46,7 @@ ul.menu{
 
 .top-nav{
     
-    background: rgb(247, 247, 247);
+    background: white;
     display: flex;
     justify-content: flex-end;
     margin-top: 20px;
@@ -49,33 +60,6 @@ li{
     font-size: 20px;
 }
 
-.mountain1{
-
-    width: 50px;
-    margin-top: 15px;
-    margin-right: 590px;
-}
-
-h2{
-    font-weight: normal;
-    font-size: 45px;
-    display: flex;
-    justify-content: center;
-    
-}
-.section1 h2{
-    margin-top: 100px;
-}
-
-.section1 p{
-    font-weight: normal;
-    font-size: 20px;
-    display: flex;
-    justify-content: center;
-    margin-top: -30px;
-    color: rgb(212, 212, 212);
-}
-
 #btn1{
     background-color: #606060;
     color: white;
@@ -85,68 +69,33 @@ h2{
     font-size: 18px;
 }
 
-.field{
+h2{
+    font-weight: normal;
+    font-size: 30px;
     display: flex;
     justify-content: center;
-    padding-top: 10px;
-    margin-bottom: 90px;
     
 }
 
-#searchterm{
-    padding: 13px; 
-    width: 380px;
-    font-size: 18px;
-    margin-right: 8px;
-}
-
-#buscar{
-    background-color: #606060;
-    color: white;
-    border-style: none;
-    padding: 13px; 
-    width: 150px;
-    font-size: 18px;
-}
-
 .section2{
-    background: white;
+    background: rgb(247, 247, 247);
     border-style:solid;
     border-color: rgb(226, 226, 226);
     border-width: 1.9px;
 }
 
-.categorias_columnas{
-    display: flex;
-    justify-content: center;
-}
-
-.section2 article
-{
-    padding: 15px;
-    margin: 30px;
-    margin-top: -50px;
-}
-
-.section2 h3
-{
-    font-size: 20px;
-    font-weight: normal;
-    display: flex;
-    justify-content: center;
-}
-
 .section2 h2{
-    margin-top: 60px;
+    margin-top: 80px;
 }
 
 .section2 p{
-    
-    margin-top: -20px;
-    text-align: center;
-    font-size: 13px;
-    color: rgb(156, 155, 155);
-    margin-bottom: 80px;
+    font-weight: normal;
+    font-size: 25px;
+    display: flex;
+    justify-content: center;
+    margin-top: -18px;
+    margin-bottom: 30px;
+    color: rgb(185, 184, 184);
 }
 
 .section3{
@@ -154,41 +103,81 @@ h2{
     border-style:solid;
     border-color: rgb(226, 226, 226);
     border-width: 1.9px;
+}
+
+.textBoxes{
+    display: flex;
+    justify-content: center;
     
 }
 
-.img_flechaI, .img_flechaD{
-    margin-top: 115px;
-    width: 24px;
-    height:41px;
-    padding: 5px;
+#email, #password{
+    margin: 20px;
+    padding: 11px; 
+    font-size: 17px;
+    padding-left: 3px;
+    color: rgb(153, 153, 153);
+    border-style:solid;
+    border-width: 2px;
+    border-color: rgb(168, 168, 168);
+    border-radius: 3px;
 }
 
-.imag_section3_1 , .imag_section3_2{
-    width: 300px; ;
+#email{
+    margin-top: 70px;  
+}
+
+#btn2{
+    background-color: #606060;
+    color: white;
+}
+
+#btn3{
+    background: rgb(236, 235, 235);
+    color: #606060;
+    
+}
+
+#btn2, #btn3{
+    
+    margin: 5px;
+    border-style: none;
+    padding: 12px;
+    width: 200px;
+    font-size: 16px;
+    margin-top: 20px;
+    margin-bottom: 30px;
 }
 
 .section3 h2{
-    margin-top: 60px;
-    
-}
-
-.section3 article
-{
-    text-align: center;
-    margin: 30px;
-    margin-top: -15px;
-}
-
-.calamRecientes_columnas{
+    font-weight: normal;
+    font-size: 30px;
     display: flex;
     justify-content: center;
+    margin-top: -12px;
+    color: rgb(214, 213, 213);
 }
 
-.section3 h3{
-    font-size: 20px;
-    margin-bottom: 40px;
+.section3 pre{
     font-weight: normal;
+    font-size: 15px;
+    display: flex;
+    justify-content: center;
+    margin-top: -20px;
+    margin-bottom: 30px;
+    color: rgb(143, 142, 142);
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.registrar{
+    color:blue;
+    text-decoration: underline;
+}
+
+.buttons{
+    display: flex;
+    justify-content: center;
+    
 }
 
 .section4{
@@ -196,8 +185,6 @@ h2{
     border-style:solid;
     border-color: rgb(226, 226, 226);
     border-width: 1.9px;
-    margin-bottom: 30px;
-    
 }
 
 ul.menu_bot{
@@ -217,20 +204,21 @@ ul.menu_bot{
 
 .section4 li{
     margin: 0px 10px;
-    font-size: 18px;
-    padding: 15px;
+    font-size: 16px;
+    padding: 10px;
     margin-top: -15px;
 }
 
 .section4 img{
-    width: 15px;
+    width: 25px;
     padding-right: 5px;
 }
 
 .section4 p{
-    font-size: 18px;
+    font-size: 16px;
     font-weight: normal;
     display:flex;
     justify-content: center;
     margin-top: 5px;
+    margin-bottom: 30px;
 }

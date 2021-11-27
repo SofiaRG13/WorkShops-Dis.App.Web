@@ -1,35 +1,3 @@
-body
-{
-    background: rgb(236, 236, 236);
-    color: #606060;
-    font-size: 12px;  
-    margin: 0px;
-    padding-left: 40px;
-    padding-right: 40px;
-    margin-top: 30px;
-    margin-bottom: 30px;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-
-
-
-
-
-    
-    --color_gris: #606060;
-}
-
-.container
-{
-    margin-left: 280px;
-    margin-right: 280px;
-    
-}
-
-a{
-    text-decoration: none;
-    color:#606060;
-}
-
 .section1{
     background: rgb(247, 247, 247);
     border-style:solid;
@@ -37,7 +5,7 @@ a{
     border-width: 1.9px;
 }
 
-.section2, .section3, .section4{
+.section2, .section3, .section4, .section5{
     background: white;
     border-style:solid;
     border-color: rgb(226, 226, 226);
@@ -85,9 +53,10 @@ li{
 
 h2{
     font-weight: normal;
-    font-size: 40px;
+    font-size: 30px;
     display: flex;
     justify-content: center;
+    
 }
 
 .section2 h2{
@@ -103,38 +72,65 @@ h2{
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
-.section3{
-    display: flex;
-    justify-content: center;
-    
+#btn2{
+    background-color: #606060;
+    color: white;
 }
 
-.cambalache_products{
-    display: inline-flex;
-    margin: 10px;
-    padding: 10px;
-    
-}
-
-.left, .middle, .right{
-    margin-top: 35px;
-    margin-bottom: 35px;
-}
-
-.left{
-    margin-left: 45px;
-}
-
-.section3 h2{
-    font-size: 18px;
-    margin-left: 15px;
-}
-
-.section3 p{
+#btn2{
+    border-style: none;
+    padding: 12px;
+    width: 160px;
     font-size: 16px;
-    margin-top: -30px;
-    margin-left: 15px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-left: 116px;
+}
 
+.section4{
+    display: flex;
+    justify-content: center; 
+}
+
+.dashboard_products{
+    margin-top: 38px;
+    margin-bottom: 110px;
+    display: inline-flex;
+    padding: 20px;
+}
+
+.img_dash{
+    height: 182px;
+    width: 180px;
+}
+
+.name{
+    color:blue;
+    text-decoration: underline;
+    font-size: 18px;
+    margin-left: 5px;
+}
+
+.botonED, .botonEL{
+    color: white;
+    border-style: solid;
+    border-width: 1.9px;
+    padding: 8px;
+    font-size: 16px;
+    margin-top: 18px;
+    margin-bottom: 40px;
+    margin-left: 5px;
+}
+
+.botonED{
+    background-color: rgb(4, 158, 4);
+    width: 90px;
+}
+
+.botonEL{
+    background-color: rgb(247, 82, 82);
+    width: 100px;
+    margin-top: 24px;
 }
 
 ul.menu_bot{
@@ -152,19 +148,19 @@ ul.menu_bot{
     
 }
 
-.section4 li{
+.section5 li{
     margin: 0px 10px;
     font-size: 16px;
     padding: 10px;
     margin-top: -15px;
 }
 
-.section4 img{
+.section5 img{
     width: 25px;
     padding-right: 5px;
 }
 
-.section4 p{
+.section5 p{
     font-size: 16px;
     font-weight: normal;
     display:flex;
