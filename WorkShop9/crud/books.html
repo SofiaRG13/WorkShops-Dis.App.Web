@@ -20,12 +20,24 @@
         <div class="error_msg" id="error_msg"></div>
         <form id="book-form">
           <input type="text" class="form-input" name="title" value="" placeholder="Type book title" class="required" id="title"  onkeyup="validateTitle()" />
-          <!-- <input type="text" name="author" value="" placeholder="Type your author" class="required" id="author" /> -->
+
           <select name="author" id="authors-list" class="form-input">
+
           </select>
-          <input type="button" value="Add" id="add-book-button" onclick="addBook()" disabled />
+          <input type="button" value="Add" id="add-book-button" onclick="addBook();" disabled />
         </form>
       </div>
+
+      <h1>Add new author</h1>
+      <div class="form-author-info">
+        <div class="error_msg" id="error_msg"></div>
+        <form id="author-form">
+          <input type="text" name="author" value="" placeholder="Type your author" class="required" id="author"  onkeyup="validateAuthor()"/> 
+
+          <input type="button" value="Add" id="add-author-button" onclick="addAuthor();" disabled />
+        </form>
+      </div>
+
     </div>
   </section>
   <section>
@@ -34,17 +46,36 @@
       <tbody id="books_table">
       </tbody>
     </table>
+    <h2>Authors List</h2>
+    <table class="table table-light">
+      
+      <tbody id="authors_table">
+      </tbody>
+    </table>
+
     <div class="d-flex flex-column hidden" id="edit-block">
       <h1>Edit book</h1>
       <div class="form-contact-info">
         <div class="error_msg" id="error_msg"></div>
         <form id="book-form">
           <input type="text" name="title" value="" placeholder="Type book title" class="required" id="edit-book-name" />
-          <!-- <input type="text" name="author" value="" placeholder="Type your author" class="required" id="editAuthor" /> -->
+          <select name="author" id="edit-author" class="required">
+          </select>
           <input type="hidden" name="id" value="" id="edit-book-id" />
           <input type="button" value="Save" id="save-book-button" onclick="saveBook()"/>
         </form>
       </div>
+
+      <h1>Edit Author</h1>
+      <div class="form-contact-info">
+        <div class="error_msg" id="error_msg"></div>
+        <form id="author-form">
+          <input type="text" name="author" value="" placeholder="Type your author" class="required" id="edit-author-name" />
+          <input type="hidden" name="id" value="" id="edit-author-id" />
+          <input type="button" value="Save" id="save-author-button" onclick="saveAuthor();"/>
+        </form>
+      </div>
+
     </div>
   </section>
   <!-- <script src="js/database.js" type="text/javascript"></script>
