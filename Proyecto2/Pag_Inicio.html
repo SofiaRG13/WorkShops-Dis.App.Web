@@ -9,6 +9,10 @@
     <link rel="stylesheet" href="estilo_General.css">
     <link rel="stylesheet" href="estilo_Inicio.css">
     <link href="https://fonts.google.com/specimen/Open+Sans" rel="stylesheet" type="text/css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" 
+    rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" 
+    crossorigin="anonymous">
+    
 </head>
 
 
@@ -16,128 +20,128 @@
    <main class="main">
     <div class="container">
 
-        <section class="section1">
-            <article>
-                <nav class="top-nav">
-    
-                    <img class="mountain1" src="Images/mountain.png" alt="Logo Montaña">
+        <div class= "row section1">
+          
+            <nav class="navbar navbar-expand-lg">
+                <div class="container-fluid">
+                    <img src="Images/img_inicio.png" class="img-top" alt="Imagen de Inicio">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                        <div class="navbar-nav">
+                            <a class="nav-link active" aria-current="page" href="Pag_Inicio.html">Inicio</a>
+                            <a class="nav-link active" href="#">Cambalaches</a>
+                            <a class="nav-link active" href="#">Ingresar</a>
 
-                    <ul class="menu">
-                        
-                        <li>
-                            <a href="Pag_Inicio.html"> Inicio </a>
-                        </li>
-                        <li>
-                            <a> | </a>
-                        </li>
-                        <li>
-                            <a href="Pag_Cambalaches.html"> Cambalaches </a>
-                        </li>
-                        <li>
-                            <a> | </a>
-                        </li>
-                        <li>
-                            <a href="Pag_Login.html" > Ingresar </a>
-                        </li>
-                        <li>
-                        <input id="btn1" class="boton" type="button" value="Mi Carrito" >
-                        </li>
-                    </ul>
-                </nav>
+                            <button class="btn btn-outline-success" type="button">Mi Carrito</button>
 
-                <h2 id="titulo1">Inicia tu cambalache.</h2>
-                <p>____________________________</p>
-
-                <div class="field" id="searchform">
-                    <input type="text" id="searchterm" placeholder="PS 4..." />
-                    <button type="button" id="buscar">Buscar</button>
+                        </div>
                     </div>
+                </div>
+            </nav>
+ 
+        <article>
+            
+            <h2 id="titulo1">Inicia tu cambalache.</h2>
+            <p id="linea1">____________________________</p>
+
+            <div class="field" id="searchform">
+                <input type="text" id="searchterm" placeholder="Buscar" />
+                <button class="btn btn-outline-success" type="submit" id="buscar">Buscar</button>
+                </div>
+        </article>
+        </div> 
+
+
+        <div class= "row section2">
+            <article>
+
+                <h2 id="titulo2">Categorias</h2>
+                <p id="catText">Aqui se encuentran todas las categorías existentes de todos los productos  </p>
+
             </article>
-        </section> 
-
-
-        <section class="section2">
-            <h2 id="titulo2">Categorias</h2>
-            <p>Sed ut perspiciatis unde amnis iste natus error sit voluptatem <br> accusantium doloremque laudantiumb</p>
             <div class="categorias_columnas">
-                <article>
-                    <img id="img_cat1" src="Images/img_categorias.png" alt="Imagen de Categoria">
-                    <h3 class="categoria" id="cat_1">ELECTRONICOS</h3>
-                </article>
+                <div class="row justify-content-center">
+                    
+                    <div class="card" style="width: 350px;">
+                        <img src="Images/categoria_electronicos.jpg" class="card-img-top" alt="Imagen de Categoria">
+                        <div class="card-body">
+                        <p class="card-text">ELECTRONICOS</p>
+                        </div>
+                    </div>
 
-                <article>
-                    <img id="img_cat2" src="Images/img_categorias.png" alt="Imagen de Categoria">
-                    <h3 class="categoria" id="cat_2">HOGAR</h3>
-                </article>
-
-                <article>
-                    <img id="img_cat3" src="Images/img_categorias.png" alt="Imagen de Categoria">
-                    <h3 class="categoria" id="cat_3">NEGOCIO</h3>
-                </article>
+                    <div class="card" style="width: 350px;">
+                        <img src="Images/categoria_hogar.jpg" class="card-img-top" alt="Imagen de Categoria">
+                        <div class="card-body">
+                        <p class="card-text">HOGAR</p>
+                        </div>
+                    </div>
+                
+                    <div class="card" style="width: 350px;">
+                        <img src="Images/categoria_negocio.jpg" class="card-img-top" alt="Imagen de Categoria">
+                        <div class="card-body">
+                        <p class="card-text">NEGOCIO</p>
+                        </div>
+                    
+                    </div>
+                </div>
             </div>
-        </section> 
+            
+        </div>
 
+        <div class="row section3">   
 
-        <section class="section3">              
             <h2 id="titulo3">Cambalaches Recientes</h2>
             
             <div class="calamRecientes_columnas">
 
-                <img class="img_flechaI" src="Images/flecha_izq.png" alt="Flecha Izquierda">
+                <div class="row justify-content-center">
 
-                <article>
-                    
-                    <img class="imag_section3_1" src="Images/img_section3.png" alt="Imagen de Cambalache">
-                    <h3 class="cambaRecientes" id="camba_1">PS 4 (FORTNITE EDITION)</h3>    
-                </article>
-                <article>
-                    <img class="imag_section3_2" src="Images/img_section3.png" alt="Imagen de Cambalache">         
-                    <h3 class="cambaRecientes" id="camba_2" >OLLA ARROCERA</h3>
-                </article>
+                    <img id="img_flechaI" src="Images/flecha_izq.png" alt="Flecha Izquierda">
 
-                <img class="img_flechaD" src="Images/flecha_der.png" alt="Flecha Derecha"> 
-            </div>
-        </section> 
+                    <div class="card" style="width: 400px;">
+                        <img src="Images/img_section3.png" class="card-img-top" alt="Imagen de Categoria">
+                        <div class="card-body">
+                        <p class="card-text">PS 4 (FORTNITE EDITION)</p>
+                        </div>
+                    </div>
 
-        <section class="section4">
-            <article>
-                <nav class="bot-nav">
-
-                    <ul class="menu_bot">
-                        
-                        <li>
-                            <a href="Pag_Inicio.html"> Home </a>
-                        </li>
-                        <li>
-                            <a> | </a>
-                        </li>
-                        <li>
-                            <a> About </a>
-                        </li>
-                        <li>
-                            <a> | </a>
-                        </li>
-                        <li>
-                            <a> Shop </a>
-                        </li>
-                        <li>
-                            <a> | </a>
-                        </li>
-                        <li>
-                            <a> Help </a>
-                        </li>
-                    </ul>
-                </nav>
-
+                    <div class="card" style="width: 400px;">
+                        <img src="Images/img_section3.png" class="card-img-top" alt="Imagen de Categoria">
+                        <div class="card-body">
+                        <p class="card-text">OLLA ARROCERA</p>
+                        </div>
+                    </div>
                 
-                <p><img src="Images/c.png" alt="C">Cambalache.net</p>
-        
-            </article>
-        </section> 
+                    <img id="img_flechaD" src="Images/flecha_der.png" alt="Flecha Derecha"> 
+                </div>
 
+            </div>
+        </div> 
 
+        <div class= "row section4">
+          
+            <nav class="navbar navbar-expand-lg">
+                <div class="container-fluid">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                        <div class="navbar-nav">
+                            <a class="nav-link active" aria-current="page" href="Pag_Inicio.html">Inicio</a>
+                            <a class="nav-link active" href="#">Cambalaches</a>
+                            <a class="nav-link active" href="#">Ingresar</a>
+                        </div>
+                        
+                    </div>
+                </div>
+            </nav>
+            <p><img src="Images/c.png" alt="C">Cambalache.net</p>
+        </div> 
 
     </div>    
     </main> 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>
 </html>
