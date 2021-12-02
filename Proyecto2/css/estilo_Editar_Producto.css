@@ -1,0 +1,129 @@
+:root
+{
+    --color_gris: #606060;
+    --color_borde:rgb(226, 226, 226);
+    --color_background: rgb(247, 247, 247);
+}
+
+.section1{
+    background-color: var(--color_background);
+}
+
+.img-top{
+    width: 50px;
+}
+
+.navbar{
+    background-color: white;
+   
+}
+
+.section1 .navbar-brand,.collapse .nav-link {
+    color: var(--color_gris);
+}
+
+.section1 .navbar-collapse
+{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.section2{
+    background-color: var(--color_background);
+}
+
+h2{
+    display: flex;
+    justify-content: center;
+    color: var(--color_gris);
+}
+
+#titulo1{
+    font-weight: normal;
+    margin-top: 100px;
+    font-size: 40px;
+}
+
+#linea1{
+    font-weight: normal;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    color: rgb(212, 212, 212);
+}
+
+
+.g-3,.section3,.form-group{
+    display: flex;
+    justify-content: center; 
+}
+
+.section3 h2{
+    font-weight: normal;
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    margin-top: 5px;
+    margin-bottom: 30px;
+    color: rgb(214, 213, 213);
+}
+
+.section3 p{
+    font-weight: normal;
+    font-size: 15px;
+    display: flex;
+    justify-content: center;
+    color: rgb(143, 142, 142);
+    margin-top: 20px;
+}
+
+
+#taDescripcion,#taBusco{
+    font-family: var(--font-family);
+    margin: 18px 5px 5px;
+    width: 540px;
+    height: 90px;
+    
+}
+
+#ProductName, #linkImg{
+    margin: 18px 5px 5px;
+    width: 540px;
+}
+
+#btn2, #btn3{
+    margin: 10px;
+    padding: 8px;
+    width: 200px;
+    margin-bottom:40px;
+}
+
+.section4{
+    border-style:solid;
+    border-color: var(--color_borde);
+    border-width: 1.9px;
+    border-right: 0px;
+    border-left: 0px;
+}
+
+.section4 .navbar-brand,.collapse .nav-link {
+    color: var(--color_gris);
+}
+
+.section4 .navbar-collapse
+{
+    display: flex;
+    justify-content: center;
+}
+
+.section4 img{
+    width: 30px;
+    padding-right: 5px;
+}
+
+.section4 p{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
