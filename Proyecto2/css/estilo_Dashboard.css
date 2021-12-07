@@ -40,15 +40,6 @@ h2{
     font-size: 40px;
 }
 
-#linea1{
-    font-weight: normal;
-    font-size: 20px;
-    display: flex;
-    justify-content: center;
-    margin-top: 10px;
-    color: rgb(212, 212, 212);
-}
-
 .section2 h2{
     margin-top: 80px;
 }
@@ -73,7 +64,38 @@ h2{
     color: white;
 }
 
+.card{
+    margin: 20px;
+  
+    margin-bottom: 45px;
+    
+}
 
+.productos_columnas, .card-title{
+    display: flex;
+    justify-content: center;
+
+}
+
+.card-img-top{
+    height: 280px;
+}
+
+#btnEditar{
+    margin-left: 55px;
+    margin-right: 10px;
+    width: 82.27px;
+    height: 38px;
+    background-color: rgb(4, 158, 4);
+    border: none;
+}
+
+#btnEliminar{
+    width: 82.27px;
+    height: 38px;
+    background-color: rgb(247, 82, 82);
+    border: none;
+}
 
 .section5,.section3{
     border-style:solid;

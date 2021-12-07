@@ -1,0 +1,150 @@
+:root
+{
+    --color_gris: #606060;
+    --color_borde:rgb(226, 226, 226);
+    --color_background: rgb(247, 247, 247);
+}
+
+.section1{
+    background-color: var(--color_background);
+}
+
+.img-top{
+    width: 50px;
+}
+
+.navbar{
+    background-color: white;
+   
+}
+
+.section1 .navbar-brand,.collapse .nav-link {
+    color: var(--color_gris);
+}
+
+.section1 .navbar-collapse
+{
+    display: flex;
+    justify-content: flex-end;
+}
+
+#btn1{
+    background-color: var(--color_gris);
+    color: white;
+    border-style: none;
+    padding: 5px;
+    width: 110px;
+    font-size: 18px;
+}
+
+.section2{
+    background: white;
+    border-style:solid;
+    border-color: var(--color_borde);
+    border-width: 1.9px;
+    border-right: 0px;
+    border-left: 0px;
+
+}
+
+#ProductImage{
+    border-style:solid;
+    border-color: var(--color_borde);
+    border-width: 2px;
+    border-left: none;
+    border-bottom: none;
+    border-top: none;
+    margin-top: -1px;
+    margin-bottom: -4px;
+
+}
+
+#Prod_Detail{
+    margin-top: 38px;
+}
+
+h1{
+    font-weight: normal;
+    font-size: 50px;
+}
+
+#ofrecido{
+    font-style: normal;
+    font-size: 18px;
+    color: rgb(156, 155, 155);
+    margin-top: 5px;
+}
+
+.section2 a{
+    font-size: 18px;
+    color:blue;
+    text-decoration: underline;
+}
+
+.section2 p{
+    font-size: 16px;
+    color: rgb(156, 155, 155);
+}
+
+#line,#line2{
+    font-size: 30px;
+    font-weight: bold;
+    color: rgb(206, 203, 203);
+}
+
+#line{
+    margin-top: -10px;
+}
+
+.section2 h2{
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.description{
+    margin-top: -10px;
+}
+
+.busco{
+    margin-top: 35px;
+}
+
+#btnAgre{
+    background-color: var(--color_gris);
+    color: white;
+}
+
+#btnAgre{
+    border-style: none;
+    padding: 12px;
+    width: 160px;
+    font-size: 16px;
+    margin-top: -5px;
+    margin-bottom: 5px;
+}
+
+.section3 .navbar{
+    background-color: white
+   
+}
+
+.section3 .navbar-brand,.collapse .nav-link {
+    color: var(--color_gris);
+}
+
+.section3 .navbar-collapse
+{
+    display: flex;
+    justify-content: center;
+}
+
+.section3 img{
+    width: 30px;
+    padding-right: 5px;
+}
+
+.section3 p{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}

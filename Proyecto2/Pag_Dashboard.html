@@ -16,7 +16,7 @@
 </head>
 
 
-<body onload="dashName()">
+<body onload="dashName(), dashItems()">
    <main class="main">
     <div class="container">
 
@@ -24,7 +24,7 @@
           
             <nav class="navbar navbar-expand-lg navbar-light">
                 <div class="container-fluid">
-                    <img src="Images/img_inicio.png" class="img-top" alt="Imagen de Dashboard">
+                    <img src="Images/dashboard.png" class="img-top" alt="Imagen de Dashboard">
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
@@ -40,11 +40,7 @@
                     </div>
                 </div>
             </nav>
- 
-        
         </div> 
-
-
 
         <div class= "row section2">
             <article>
@@ -59,8 +55,15 @@
             <button id="btn2" class="btn btn-outline-success" type="button" onclick="location.href= 'Pag_Crear_Producto.html', addProduct()">Nuevo</button>
         </div>
 
-        <div class="row section4">   
+        <div class="row section4" >   
+            <div class="productos_columnas">
+                <div class="row justify-content-center" id="products_container">
+                    
+                    
 
+                    
+                </div>
+            </div>
             
         </div> 
 
@@ -88,5 +91,6 @@
     </main> 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
     <script src="js/usuarios.js" type="text/javascript"></script>
+    <script src="js/productos.js" type="text/javascript"></script>
 </body>
 </html>

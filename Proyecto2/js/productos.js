@@ -23,11 +23,13 @@ function addProduct() {
         Description:productDescription,
         Image:productImage,
         Busco:productBusco,
-        userName: productUserName
+        userName: productUserName,
+        creation: actualDate()
     }
   
     productDb.push(product);
     localStorage.setItem('products', JSON.stringify(productDb));
+    clearFields();
 }
   
 function validateProduct() {
@@ -63,4 +65,51 @@ function autoincremental() {
     });
     return id+1;
     }
+}
+
+function actualDate() {
+    const day=new Date();
+    let date =day.getDate() + '/' + (day.getMonth()+1) + '/' + day.getFullYear();
+    let time = day.getHours()+ ':' + day.getMinutes() + ':' + day.getSeconds(); 
+
+    let actualDate=date+' '+time;
+
+    return actualDate;
+
+
+}
+
+function clearFields() {
+    document.getElementById('ProductName').value= "";
+    document.getElementById("taDescripcion").value= "Descripcion";
+    document.getElementById('linkImg').value= "";
+    document.getElementById("taBusco").value= "Busco";
+}
+
+function dashItems() {
+    const products = JSON.parse(localStorage.getItem('products'));
+    const user = JSON.parse(localStorage.getItem('temporaryUser'));
+
+    let container="";
+    if(products==null){
+        window.alert("Usted no tiene productos registrados");
+    }else{
+        products.forEach(product=> {
+            if(user[0].name== product.userName){
+                let div='<div class="card" style="width:350px; margin-top:45px;">'
+                div+='<img src="'+ product.Image + '" class="card-img-top" alt="Imagen de Producto">';
+                div+='<div class="card-body">';
+                div+='<h5 class="card-title">'+product.name+'</h5>'+
+                '<a href="#" class="btn btn-primary" id="btnEditar">Editar</a>'+
+                '<a href="#" class="btn btn-primary" id="btnEliminar">Eliminar</a>';
+                div+='</div>'+'</div>';
+                container+=div;
+                console.log(div);
+
+
+            }
+        });
+        document.getElementById('products_container').innerHTML=container;
+    }
+
 }
