@@ -15,7 +15,7 @@
     
 </head>
 
-<body>
+<body onload="loadEditProduct()">
     <main class="main">
      <div class="container">
  
@@ -25,10 +25,10 @@
                 <div class="container-fluid">
                   <img src="Images/edit-product.png" class="img-top" alt="Imagen de Edicion de Producto">
                   
-                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkupTop" aria-controls="navbarNavAltMarkupTop" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                   </button>
-                  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                  <div class="collapse navbar-collapse" id="navbarNavAltMarkupTop">
                     <div class="navbar-nav">
                       <a class="nav-link active" aria-current="page" href="Pag_Inicio.html">Inicio</a>
                       <a class="nav-link active" aria-current="page" href="Pag_Cambalaches.html.html">Cambalaches</a>
@@ -55,9 +55,14 @@
             <p>Edite aqui la información del Producto</p> 
 
             <form>
+              <div class="form-group" hidden>
+                  
+                <input type="text" class="form-control" id="ProductId" placeholder="id">
+              </div>
+
                 <div class="form-group">
               
-                  <input type="productName" class="form-control" id="ProductName" placeholder="Nombre de Producto">
+                  <input type="text" class="form-control" id="ProductName" placeholder="Nombre de Producto">
                 </div>
                
                 
@@ -68,7 +73,7 @@
 
                 <div class="form-group">
               
-                    <input type="productName" class="form-control" id="linkImg" placeholder="Link de imagen del Producto">
+                    <input type="text" class="form-control" id="linkImg" placeholder="Link de imagen del Producto">
                   </div>
                  
                   
@@ -85,19 +90,17 @@
 
             </article>
 
-            <button id="btn2" class="btn btn-outline-success" type="button">Guardar</button>
-
-            <button id="btn3" class="btn btn-outline-success" type="button">Cancelar</button>
+            <button id="btn2" class="btn btn-outline-success" type="button" onclick="saveProduct()">Guardar</button>          
 
         </div> 
 
         <div class= "row section4">
             <nav class="navbar navbar-expand-lg navbar-light">
                 <div class="container-fluid">
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkupBot" aria-controls="navbarNavAltMarkupBot" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
-                    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="collapse navbar-collapse" id="navbarNavAltMarkupBot">
                         <div class="navbar-nav">
                             <a class="nav-link active" aria-current="page" href="Pag_Inicio.html">Inicio</a>
                             <a class="nav-link active" href="Pag_Cambalaches.html">Cambalaches</a>
@@ -113,5 +116,6 @@
     </div>    
     </main> 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-</body>
+    <script src="js/productos.js"></script>
+  </body>
 </html>

@@ -16,7 +16,7 @@
 </head>
 
 
-<body>
+<body onload="loadDetailProduct()">
    <main class="main">
     <div class="container">
 
@@ -25,13 +25,14 @@
             <nav class="navbar navbar-expand-lg navbar-light">
                 <div class="container-fluid">
                     <img src="Images/detalleProducto.png" class="img-top" alt="Imagen Detalle de Producto">
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkupTop" aria-controls="navbarNavAltMarkupTop" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
-                    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="collapse navbar-collapse" id="navbarNavAltMarkupTop">
                         <div class="navbar-nav">
                             <a class="nav-link active" aria-current="page" href="Pag_Inicio.html">Inicio</a>
                             <a class="nav-link active" href="Pag_Cambalaches.html">Cambalaches</a>
+                            <a class="nav-link active" id="dashboardtop" href="Pag_Dashboard.html">Dashboard</a>
                             <a class="nav-link active" href="Pag_Inicio.html" onclick="delSessionUser()">Cerrar Sesión</a>
 
                             <button class="btn btn-outline-success" type="button">Mi Carrito</button>
@@ -51,15 +52,15 @@
 
                 <article>
                 
-                    <h1 id="titulo1">PS 4 Fortnite Edition</h1>
-                    <p id="ofrecido">ofrecido por: <a> bladimir.arrollo</a></p>
+                    <h1 id="titulo1"></h1>
+                    <p>ofrecido por: <a id="ofrecido"></a></p>
 
                     <p id="line">____________________________________</p>
                     <h2 class="description">DESCRIPCIÓN</h2>
-                    <p id="description">Incluye la cuenta de Fortnite, asi como 2 controles y 3 <br> juegos.</p>
+                    <p id="description"></p>
 
                     <h2 class="busco">BUSCO</h2>
-                    <p id="busco">Una nintendo switch, un drone, cualquier otro electrónico.</p>
+                    <p id="busco"></p>
 
                     <p id="line2">__________</p>
                     <input id="btnAgre" class="botonAgre" type="button" value="Agregar" >
@@ -72,13 +73,14 @@
           
             <nav class="navbar navbar-expand-lg navbar-light">
                 <div class="container-fluid">
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkupBot" aria-controls="navbarNavAltMarkupBot" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
-                    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="collapse navbar-collapse" id="navbarNavAltMarkupBot">
                         <div class="navbar-nav">
                             <a class="nav-link active" aria-current="page" href="Pag_Inicio.html">Inicio</a>
                             <a class="nav-link active" href="Pag_Cambalaches.html">Cambalaches</a>
+                            <a class="nav-link active" id="dashboardbot" href="Pag_Dashboard.html">Dashboard</a>
                             <a class="nav-link active" href="Pag_Inicio.html" onclick="delSessionUser()">Cerrar Sesión</a>
                         </div>
                         
@@ -91,7 +93,7 @@
     </div>    
     </main> 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-    <script src="js/productos.js" type="text/javascript"></script>
-    <script src="js/usuarios.js" type="text/javascript"></script>
+    <script src="js/productos.js"></script>
+    <script src="js/usuarios.js"></script>
 </body>
 </html>

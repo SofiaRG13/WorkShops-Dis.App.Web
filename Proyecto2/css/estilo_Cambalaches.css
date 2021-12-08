@@ -53,10 +53,29 @@ h2{
     font-family: var(--font-family);
 }
 
+.card{
+    margin: 20px;
+    margin-bottom: 45px; 
+}
+
+.productos_columnas,.card-title, .card-text{
+    display: flex;
+    justify-content: center;
+
+}
+
+.card-img-top{
+    height: 280px;
+}
+
+.section3 p{
+    color:blue;
+    text-decoration: underline;
+    margin-top: -28px;
+}
 
 
-
-.section4{
+.section4,.section3{
     border-style:solid;
     border-color: var(--color_borde);
     border-width: 1.9px;

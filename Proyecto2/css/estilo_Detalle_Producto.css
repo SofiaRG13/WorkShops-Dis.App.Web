@@ -48,15 +48,8 @@
 }
 
 #ProductImage{
-    border-style:solid;
-    border-color: var(--color_borde);
-    border-width: 2px;
-    border-left: none;
-    border-bottom: none;
-    border-top: none;
     margin-top: -1px;
     margin-bottom: -4px;
-
 }
 
 #Prod_Detail{

@@ -16,7 +16,7 @@
 </head>
 
 
-<body>
+<body onload="cambaRecents(),validateUserAuthenticated()">
    <main class="main">
     <div class="container">
 
@@ -25,15 +25,17 @@
             <nav class="navbar navbar-expand-lg navbar-light">
                 <div class="container-fluid">
                     <img src="Images/img_inicio.png" class="img-top" alt="Imagen de Inicio">
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkupTop" aria-controls="navbarNavAltMarkupTop" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
-                    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="collapse navbar-collapse" id="navbarNavAltMarkupTop">
                         <div class="navbar-nav">
                             <a class="nav-link active" aria-current="page" href="Pag_Inicio.html">Inicio</a>
                             <a class="nav-link active" href="Pag_Cambalaches.html">Cambalaches</a>
-                            <a class="nav-link active" href="Pag_Login.html">Ingresar</a>
-
+                            <a class="nav-link active" id="ingresartop" href="Pag_Login.html">Ingresar</a>
+                            <a class="nav-link active" id="dashboardtop" hidden href="Pag_Dashboard.html">Dashboard</a>
+                            <a class="nav-link active" id="cerrarSesiontop" href="Pag_Login.html" hidden onclick="delSessionUser()">Cerrar Sesión</a>
+                            
                             <button class="btn btn-outline-success" type="button">Mi Carrito</button>
 
                         </div>
@@ -96,25 +98,9 @@
             
             <div class="calamRecientes_columnas">
 
-                <div class="row justify-content-center">
+                <div class="row justify-content-center" id="cambaRecents" >
 
-                    <img id="img_flechaI" src="Images/flecha_izq.png" alt="Flecha Izquierda">
-
-                    <div class="card" style="width: 400px;">
-                        <img src="Images/img_section3.png" class="card-img-top" alt="Imagen de Categoria">
-                        <div class="card-body">
-                        <p class="card-text">PS 4 (FORTNITE EDITION)</p>
-                        </div>
-                    </div>
-
-                    <div class="card" style="width: 400px;">
-                        <img src="Images/img_section3.png" class="card-img-top" alt="Imagen de Categoria">
-                        <div class="card-body">
-                        <p class="card-text">OLLA ARROCERA</p>
-                        </div>
-                    </div>
-                
-                    <img id="img_flechaD" src="Images/flecha_der.png" alt="Flecha Derecha"> 
+                    
                 </div>
 
             </div>
@@ -124,14 +110,16 @@
           
             <nav class="navbar navbar-expand-lg navbar-light">
                 <div class="container-fluid">
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkupBot" aria-controls="navbarNavAltMarkupBot" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
-                    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="collapse navbar-collapse" id="navbarNavAltMarkupBot">
                         <div class="navbar-nav">
                             <a class="nav-link active" aria-current="page" href="Pag_Inicio.html">Inicio</a>
                             <a class="nav-link active" href="Pag_Cambalaches.html">Cambalaches</a>
-                            <a class="nav-link active" href="Pag_Login.html">Ingresar</a>
+                            <a class="nav-link active" id="ingresarbot" href="Pag_Login.html">Ingresar</a>
+                            <a class="nav-link active" id="dashboardbot" hidden href="Pag_Dashboard.html">Dashboard</a>
+                            <a class="nav-link active" id="cerrarSesionbot" href="Pag_Login.html" hidden onclick="delSessionUser()">Cerrar Sesión</a>  
                         </div>
                         
                     </div>
@@ -143,5 +131,7 @@
     </div>    
     </main> 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script src="js/productos.js"></script>
+    <script src="js/usuarios.js"></script>
 </body>
 </html>

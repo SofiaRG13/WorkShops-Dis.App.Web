@@ -79,6 +79,23 @@ function login() {
   }
 }
 
+function validateUserAuthenticated() {
+
+  //insert termporary user to localstorage
+  let temporaryDb = JSON.parse(localStorage.getItem('temporaryUser'));
+  if(temporaryDb==null) {
+    
+  }else{
+    document.getElementById('ingresartop').hidden=true;
+    document.getElementById('ingresarbot').hidden=true;
+    document.getElementById('cerrarSesionbot').hidden=false;
+    document.getElementById('cerrarSesiontop').hidden=false;
+    document.getElementById('dashboardtop').hidden=false;
+    document.getElementById('dashboardbot').hidden=false;
+
+  }
+}
+
 function sessionUser(id,name) {
 
   //insert termporary user to localstorage
